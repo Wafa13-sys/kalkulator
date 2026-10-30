@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+    <link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+    <div class="kalkulator">
+    <h1>KALKULATOR</h1>
+    <div id="proses" aria-live="polite"></div>
+    <input type="text" id="layar" value="0" readonly>
+    <div class="tombol">
+        <button onclick="hapusSemua()">AC</button>
+        <button onclick="hapusSatu()">DEL</button>
+        <button onclick="ubahTanda()">+/-</button>
+        <button onclick="pilihOperator('/')">÷</button>
+
+        <button onclick="masukkanAngka('1')">1</button>
+        <button onclick="masukkanAngka('2')">2</button>
+        <button onclick="masukkanAngka('3')">3</button>
+        <button onclick="pilihOperator('*')">×</button>
+
+        <button onclick="masukkanAngka('4')">4</button>
+        <button onclick="masukkanAngka('5')">5</button>
+        <button onclick="masukkanAngka('6')">6</button>
+        <button onclick="pilihOperator('-')">-</button>
+
+        <button onclick="masukkanAngka('7')">7</button>
+        <button onclick="masukkanAngka('8')">8</button>
+        <button onclick="masukkanAngka('9')">9</button>
+        <button onclick="pilihOperator('+')">+</button>
+
+        <button onclick="masukkanAngka('0')">0</button>
+        <button onclick="masukkanAngka('00')">00</button>
+        <button onclick="masukkanAngka('.')">.</button>
+        <button onclick="hitung()">=</button>
+    </div>
+    <script src="kalkulator.js"></script>
+    
+</body>
+</html>
